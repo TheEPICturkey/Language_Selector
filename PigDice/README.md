@@ -24,7 +24,20 @@ _On this webpage, a user will be prompted to input a number of their choosing. U
 
 ## TESTS
 
-* _Describe: oinkOink();_
+* _Describe: rollDice();_
+
+Test 1: "It will randomize a number between one and twelve and return that value."
+Code : rollDice();
+Expected: any number between one and twelve. 
+
+* _Describe: Game;_
+Test 1: "It will return player name and score."
+Code: console.log(game);
+Expected:playerName {playerName: 'Matt', score: 0}
+playerName {playerName: 'Brandon', score: 0}
+
+Test 3
+
 
 
 
