@@ -16,30 +16,48 @@ _On this webpage, a user will be prompted to input a number of their choosing. U
 
 ## Setup/Installation Requirements
 
-* _Clone from GitHub at:https://github.com/TheEPICturkey/MrRobo ._
-* _Navigate to the "mr-robogers-neighborhood" folder_
+* _Clone from GitHub at: ._
+* _Navigate to the folder_
 * _Double click index.html to open a locally hosted instance_
 * _Enter a number to see how it works_
 * _TO EDIT: Open folder using text editor of your choice_
 
 ## TESTS
 
+
+* _Describe: player;_
+Test 1: "It will return player name and score."
+Code: players;
+Expected: Player {playerName: 'PlayerOne', turnScore: 0, gameScore: 0} 
+Player {playerName: 'CPU', turnScore: 0, gameScore: 0}
+
+
+* _Describe: activePlayer();_
+
+Test 1: "It will set active player to player1"
+Code : let activePlayer = player1;
+Expected:  Player {playerName: 'PlayerOne', turnScore: 0, gameScore: 0}
+
+
 * _Describe: rollDice();_
 
-Test 1: "It will randomize a number between one and twelve and return that value."
+Test 1: "It will randomize a number between one and twelve and return that value and add to previous roll."
 Code : rollDice();
-Expected: any number between one and twelve. 
-
-* _Describe: Game;_
-Test 1: "It will return player name and score."
-Code: console.log(game);
-Expected:playerName {playerName: 'Matt', score: 0}
-playerName {playerName: 'Brandon', score: 0}
-
-Test 3
+Expected: 5
 
 
+*_Describe: holdScore_
+Test 1: "It will hold players rolled score."
+Code: Player.prototype.holdScore
+Expected: 5
+ 
 
+*_Describe: changeTurn()_
+Test 1: "It will change activePlayer to other player"
+Code: 
+changeTurn(true);
+activePlayer;
+Expected: Player {playerName: 'CPU', turnScore: 0, gameScore: 0}
 
 
 ## Known Bugs
